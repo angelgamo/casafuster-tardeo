@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'Trocchi';
+	font-style: normal;
+	src: url('./Trocchi-Regular.ttf') format('truetype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Bakerie';
+	font-style: normal;
+	src: url('./Bakerie Rough Bold.otf') format('opentype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'LeagueSpartan';
+	font-style: normal;
+	src: url('./LeagueSpartan-Bold.ttf') format('truetype');
+	font-display: swap;
+}

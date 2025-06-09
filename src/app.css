@@ -1,1 +1,137 @@
 @import 'tailwindcss';
+
+* {
+  color: white;
+}
+
+.bg {
+    background-image: url('$lib/media/image1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+
+  max-width: 1400px;
+  text-align: justify;
+  margin: 2rem auto;
+
+  .box {
+    padding: 1rem;
+    position: relative;
+  }
+  
+  .box2 {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    background-image: url('$lib/media/image2.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 500px;
+  }
+  
+  h1 { font-family: Trocchi; font-size: x-large;}
+  h2 { font-family: Bakerie; font-size: xx-large; color: #F2E9C8; }
+  p { font-family: Trocchi; font-size: larger;}
+  
+  .f_right{ h1, h2 { text-align: right; }}
+  
+  .icon {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .moon {
+    background-image: url('$lib/media/image8.svg');
+    right: 0;
+  }
+  
+  .drink {
+    background-image: url('$lib/media/image4.svg');
+  }
+  
+  .drink1 {
+    background-image: url('$lib/media/image9.webp');
+    right: 0;
+  }
+  
+  .drink2 {
+    background-image: url('$lib/media/image6.svg');
+    transform: rotate(15deg);
+  }
+}
+
+ @media (max-width: 1200px) {
+  .section1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box { padding: 1rem 3rem !important; }
+  .box2 { order: -1; }
+  .f_right{ h1, h2 { text-align: inherit !important; }}
+  .icon { right: 2rem !important; }
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;    
+
+  max-width: 1400px;
+  margin: 2rem auto;
+
+  .calendar, .village, .jardin-central, .casa-fuster, .casa-fuster2, .tardeo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .calendar { background-image: url('$lib/media/image25.svg'); }
+  .village { background-image: url('$lib/media/image10.webp'); }
+  .jardin-central { background-image: url('$lib/media/image26.webp'); }
+  .casa-fuster { background-image: url('$lib/media/image21.webp'); }
+  .casa-fuster2 { background-image: url('$lib/media/image22.webp'); }
+  .tardeo { background-image: url('$lib/media/image23.webp'); }
+}
+
+ @media (max-width: 1200px) {
+  .section2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.googleCalendar{
+  position: relative;
+  height: 0;
+  width: 100%;
+  max-width: 1400px;
+  max-height: 600px;
+  padding-bottom: min(50%, 500px);
+  margin: auto;
+}
+
+.googleCalendar iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 3rem 3rem 3rem;
+}
