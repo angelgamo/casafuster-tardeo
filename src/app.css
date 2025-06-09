@@ -110,12 +110,6 @@
   .tardeo { background-image: url('$lib/media/image23.webp'); }
 }
 
- @media (max-width: 1200px) {
-  .section2 {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
 .googleCalendar{
   position: relative;
@@ -134,4 +128,15 @@
   width: 100%;
   height: 100%;
   padding: 0 1rem 1rem 1rem;
+}
+
+ @media (max-width: 1200px) {
+  .section2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .googleCalendar{
+    padding-bottom: min(80%, 500px);
+  }
 }
