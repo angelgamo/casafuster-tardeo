@@ -62,5 +62,6 @@
 </div>
 
 <div class="googleCalendar">
+    <link rel="preconnect" href="https://calendar.google.com">
     <iframe title="Calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FMadrid&showCalendars=0&showTz=0&showPrint=0&src=NTM3OWE4MGNjN2M5Mjc3Yzk1YjdhYWI4OTk2OWY0MDhmN2YyNDkwOTUxNDcwNDdlZmNkZTU1MmJkZTA4ZDhmM0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23ad1457" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
